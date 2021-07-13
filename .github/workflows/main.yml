@@ -28,6 +28,11 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: echo Hello, world!
+      # make depends on poetry
+      - name: Install dependencies
+        run: |
+          pip install poetry
+          make install
       # Runs linters
       - name: Run flake8
         run: make lint
