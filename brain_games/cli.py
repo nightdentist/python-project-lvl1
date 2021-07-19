@@ -8,3 +8,4 @@ def welcome_user():
 
     print('Hello, ' + name + "!")
     return name
+name = welcome_user()
