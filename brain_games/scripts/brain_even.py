@@ -1,4 +1,4 @@
-from brain_games.cli import name
+from brain_games.cli import gamers_name
 
 
 def game_is_even_number():
@@ -8,4 +8,4 @@ def game_is_even_number():
     # написать функцию users_answer
     print('Your answer: ' + 'users_answer')
     
-    print("'yes' is wrong answer ;(. Correct answer was 'no'. \nLet's try again, " + name + '!')
+    print("'yes' is wrong answer ;(. Correct answer was 'no'. \nLet's try again, " + gamers_name + '!')
