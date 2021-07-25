@@ -8,4 +8,3 @@ def welcome_user():
 
     print('Hello, ' + gamers_name + "!")
     return gamers_name
-gamers_name = welcome_user()

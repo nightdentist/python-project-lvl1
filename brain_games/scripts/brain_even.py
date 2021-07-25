@@ -1,7 +1,8 @@
-from brain_games.cli import gamers_name
+from brain_games.cli import welcome_user
 
 
 def game_is_even_number():
+    gamers_name = welcome_user()
     print('Answer "yes" if the number is even, otherwise answer "no".')
     # написать функцию random_number
     print('Question: ' + 'random_number')
