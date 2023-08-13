@@ -1,19 +1,12 @@
 #!/usr/bin/env python3
 from random import randint
 import prompt
+import cli.py 
 
 GREETING = "Welcome to the Brain Games!"
 EXERCISE = 'Answer "yes" if the number is even, otherwise answer "no".'
 MAX_QUESTION_QTY = 3
 CORRECT = 'Correct!'
-
-
-def welcome_user():
-    print (GREETING)
-    name = input("May I have your name?\n")
-    print (f"Hello, {name}!")
-    print (EXERCISE)
-    return name
 
 
 def get_next_question_and_correct_answer():
