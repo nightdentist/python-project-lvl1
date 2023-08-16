@@ -10,7 +10,7 @@ CORRECT = 'Correct!'
 
 def welcome_user():
     print (GREETING)
-    name = prompt("May I have your name?\n")
+    name = prompt.string("May I have your name?\n")
     print (f"Hello, {name}!")
     print (EXERCISE)
     return name
