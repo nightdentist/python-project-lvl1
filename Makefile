@@ -1,6 +1,7 @@
 install: 
 	poetry install
 full-install:
+	poetry shell
 	make build
 	make publish
 	make package-install
