@@ -15,8 +15,6 @@ def print_exerrsise():
     print('What is the result of the expression?')
 
 
-
-
 def get_next_question_and_correct_answer():
     random_number1 = randint(1 , 20)
     random_number2 = randint(1 , 20)

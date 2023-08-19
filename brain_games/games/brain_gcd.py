@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from math import gcd
 from random import randint
 from random import choice
 
@@ -12,22 +13,14 @@ CORRECT = 'Correct!'
 
 
 def print_exerrsise():
-    print('What is the result of the expression?')
-
-
+    print('Find the greatest common divisor of given numbers.')
 
 
 def get_next_question_and_correct_answer():
-    random_number1 = randint(1 , 20)
-    random_number2 = randint(1 , 20)
-    random_arithmetic_sign = choice(['+', '-', '*'])
-    if random_arithmetic_sign == '+':
-        correct_answer = random_number1 + random_number2
-    elif random_arithmetic_sign == '-':
-        correct_answer = random_number1 - random_number2
-    else:
-        correct_answer = random_number1 * random_number2
-    question = str(random_number1) + random_arithmetic_sign + str(random_number2)
+    random_number1 = randint(1 , 100)
+    random_number2 = randint(1 , 100)
+    correct_answer = gcd(random_number1, random_number2)
+    question = random_number1, random_number2
     
     return question, correct_answer
 
@@ -47,6 +40,7 @@ def play_game(name):
             return
 
     print(f"Congratulations, {name}!")
+
 
 def run_game():
     name = welcome_user()
