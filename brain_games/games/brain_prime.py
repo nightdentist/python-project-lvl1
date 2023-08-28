@@ -16,9 +16,8 @@ def print_exerrsise():
 
 def get_next_question_and_correct_answer():
     question = randint(1 , 50)
-    correct_answer = "yes" if question % 2 == 0 else "no"
     k = 0
-    for i in range(2, a // 2+1):
+    for i in range(2, a // 2 + 1):
         if (question % i == 0):
             k = k+1
         if (k <= 0):
