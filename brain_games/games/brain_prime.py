@@ -11,13 +11,22 @@ CORRECT = 'Correct!'
 
 
 def print_exerrsise():
-    print('Answer "yes" if the number is even, otherwise answer "no".')
+    print('Answer "yes" if given number is prime. Otherwise answer "no".')
 
 
 def get_next_question_and_correct_answer():
-    question = randint(1 , 20)
-    correct_answer = 'yes' if question % 2 == 0 else 'no'
-    return question, correct_answer
+    question = randint(1 , 50)
+    correct_answer = "yes" if question % 2 == 0 else "no"
+    k = 0
+    for i in range(2, a // 2+1):
+        if (question % i == 0):
+            k = k+1
+        if (k <= 0):
+            correct_answer = "yes"
+            return correct_answer, question
+    else:
+        correct_answer = "no"
+        return correct_answer, question
 
 
 def play_game(name):
