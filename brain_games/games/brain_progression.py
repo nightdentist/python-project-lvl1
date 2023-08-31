@@ -22,7 +22,8 @@ def get_next_question_and_correct_answer():
     index = randint(1, 3)
     correct_answer = progression[index]
     progression[index] = '..'
-    question = list(progression)
+    question_progression = list(progression)
+    question = " ".join(map(str, question_progression))
     return question, correct_answer
 
 
