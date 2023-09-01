@@ -15,10 +15,10 @@ def print_exerrsise():
 
 
 def get_next_question_and_correct_answer():
-    start_progression_number = randint(1, 5)
-    fihish_progression_number = 25
-    interval_of_progression = randint(2, 4)
-    progression = list(range(start_progression_number, fihish_progression_number, interval_of_progression))
+    start_progression = randint(1, 5)
+    fihish_progression = 25
+    interval_progression = randint(2, 4)
+    progression = list(range(start_progression, fihish_progression, interval_progression))
     index = randint(1, 3)
     correct_answer = progression[index]
     progression[index] = '..'
