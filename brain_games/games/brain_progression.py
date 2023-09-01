@@ -32,7 +32,7 @@ def play_game(name):
     while good_answers < MAX_QUESTION_QTY:
         question, correct_answer = get_next_question_and_correct_answer()
         print(f"Question: {question}")
-        user_answer = input("Your answer: ")
+        user_answer = prompt.string("Your answer: ")
         if user_answer == str(correct_answer):
             good_answers += 1
             print('Correct!')
