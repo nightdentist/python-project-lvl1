@@ -21,10 +21,9 @@ def get_next_question_and_correct_answer():
         d += 1
     if d == question:
         correct_answer = 'yes'
-        return question, correct_answer
     else:
         correct_answer = "no"
-        return question, correct_answer
+    return question, correct_answer
 
 
 def play_game(name):
