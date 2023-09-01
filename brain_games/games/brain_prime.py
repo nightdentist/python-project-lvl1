@@ -21,7 +21,7 @@ def get_next_question_and_correct_answer():
         d += 1
     if d == question:
         correct_answer = 'yes'
-    else:
+    if d != question:
         correct_answer = "no"
     return question, correct_answer
 
