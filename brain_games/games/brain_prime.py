@@ -15,7 +15,7 @@ def print_exerrsise():
 
 
 def get_next_question_and_correct_answer():
-    question = randint(1, 50)
+    question = randint(2, 50)
     d = 2
     while question % d != 0:
         d += 1
