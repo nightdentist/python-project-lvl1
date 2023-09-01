@@ -26,7 +26,6 @@ def get_next_question_and_correct_answer():
     else:
         correct_answer = random_number1 * random_number2
     question = str(random_number1) + ' ' + random_arithmetic_sign + ' ' + str(random_number2)
-    
     return question, correct_answer
 
 
@@ -51,3 +50,4 @@ def run_game():
     name = welcome_user()
     print_exerrsise()
     play_game(name)
+    
