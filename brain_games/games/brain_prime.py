@@ -15,7 +15,7 @@ def print_exerrsise():
 
 
 def get_next_question_and_correct_answer():
-    question = randint(1 , 50)
+    question = randint(1, 50)
     d = 2
     while question % d != 0:
         d += 1
@@ -32,9 +32,9 @@ def play_game(name):
     while good_answers < MAX_QUESTION_QTY:
         question, correct_answer = get_next_question_and_correct_answer()
         print(f"Question: {question}")
-        user_answer = input ("Your answer: ")
+        user_answer = input("Your answer: ")
         if user_answer == correct_answer:
-            good_answers +=1
+            good_answers += 1
             print('Correct!')
         else:
             print(f"{user_answer} is wrong answer ;(. Correct answer was {correct_answer}.")

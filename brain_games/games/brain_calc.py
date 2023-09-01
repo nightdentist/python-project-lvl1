@@ -16,8 +16,8 @@ def print_exerrsise():
 
 
 def get_next_question_and_correct_answer():
-    random_number1 = randint(1 , 20)
-    random_number2 = randint(1 , 20)
+    random_number1 = randint(1, 20)
+    random_number2 = randint(1, 20)
     random_arithmetic_sign = choice(['+', '-', '*'])
     if random_arithmetic_sign == '+':
         correct_answer = random_number1 + random_number2
@@ -37,7 +37,7 @@ def play_game(name):
         print(f"Question: {question}")
         user_answer = prompt.string("Your answer: ")
         if user_answer == str(correct_answer):
-            good_answers +=1
+            good_answers += 1
             print('Correct!')
         else:
             print(f"{user_answer} is wrong answer ;(. Correct answer was {correct_answer}.")
@@ -45,6 +45,7 @@ def play_game(name):
             return
 
     print(f"Congratulations, {name}!")
+
 
 def run_game():
     name = welcome_user()
