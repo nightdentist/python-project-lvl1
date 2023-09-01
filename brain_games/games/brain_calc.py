@@ -18,14 +18,14 @@ def print_exerrsise():
 def get_next_question_and_correct_answer():
     random_num1 = randint(1, 20)
     random_num2 = randint(1, 20)
-    random_arit_sign = choice(['+', '-', '*'])
-    if random_arit_sign == '+':
+    random_sign = choice(['+', '-', '*'])
+    if random_sign == '+':
         correct_answer = random_num1 + random_num2
-    elif random_arit_sign == '-':
+    elif random_sign == '-':
         correct_answer = random_num1 - random_num2
     else:
         correct_answer = random_num1 * random_num2
-    question = str(random_num1) + ' ' + random_arit_sign + ' ' + str(random_num2)
+    question = str(random_num1) + ' ' + random_sign + ' ' + str(random_num2)
     return question, correct_answer
 
 
