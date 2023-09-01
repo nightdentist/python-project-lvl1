@@ -16,12 +16,11 @@ def print_exerrsise():
 
 def get_next_question_and_correct_answer():
     question = randint(1 , 50)
-    k = 0
-    for i in range(1, question // 2 + 1):
-        if (question % i == 0):
-            k = k+1
-    if (k <= 0):
-        correct_answer = "yes"
+    d = 2
+    while question % d != 0:
+        d += 1
+    if d == question:
+        correct_answer = 'yes'
         return question, correct_answer
     else:
         correct_answer = "no"
