@@ -30,7 +30,9 @@ def play_game(name):
             good_answers += 1
             print('Correct!')
         else:
-            print(f"{user_answer} is wrong answer ;(. Correct answer was {correct_answer}.")
+            usr_answ = (f"'{user_answer}' is wrong answer ;(. ")
+            cor_answ = (f"Correct answer was '{correct_answer}'.")
+            print(usr_answ + cor_answ)
             print(f"Let's try again, {name}!")
             return
 
