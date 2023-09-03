@@ -1,22 +1,6 @@
 #!/usr/bin/env python3
-from random import randint
-
-import prompt
-
-from brain_games.cli import welcome_user
-
 
 MAX_QUESTION_QTY = 3
-
-
-def print_exerrsise():
-    print('Answer "yes" if the number is even, otherwise answer "no".')
-
-
-def get_next_question_and_correct_answer():
-    question = randint(1, 20)
-    correct_answer = 'yes' if question % 2 == 0 else 'no'
-    return question, correct_answer
 
 
 def play_game(name):
@@ -34,11 +18,3 @@ def play_game(name):
             print(usr_answ + cor_answ)
             print(f"Let's try again, {name}!")
             return
-
-    print(f"Congratulations, {name}!")
-
-
-def run_game():
-    name = welcome_user()
-    print_exerrsise()
-    play_game(name)

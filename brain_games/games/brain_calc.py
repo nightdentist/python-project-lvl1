@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
-from random import randint
-from random import choice
+from random import randint, choice
 
 import prompt
 
@@ -8,7 +7,6 @@ from brain_games.cli import welcome_user
 
 
 MAX_QUESTION_QTY = 3
-CORRECT = 'Correct!'
 
 
 def print_exerrsise():

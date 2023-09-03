@@ -8,7 +8,6 @@ from brain_games.cli import welcome_user
 
 
 MAX_QUESTION_QTY = 3
-CORRECT = 'Correct!'
 
 
 def print_exerrsise():
