@@ -23,3 +23,4 @@ def play_game(get_next_question_and_correct_answer, rules):
             print(usr_answ + cor_answ)
             print(f"Let's try again, {name}!")
             return
+    print(f"Congratulations, {name}!")
