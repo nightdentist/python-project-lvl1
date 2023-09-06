@@ -1,9 +1,14 @@
 #!/usr/bin/env python3
+import prompt
+
+from brain_games.cli import welcome_user
 
 MAX_QUESTION_QTY = 3
 
 
-def play_game(name):
+def play_game(get_next_question_and_correct_answer, rules):
+    name = welcome_user()
+    print(rules)
     good_answers = 0
     while good_answers < MAX_QUESTION_QTY:
         question, correct_answer = get_next_question_and_correct_answer()

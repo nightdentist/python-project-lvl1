@@ -2,6 +2,8 @@
 name = "hexlet-code"
 version = "0.1.0"
 description = ""
+repository = "https://github.com/nightdentist/python-project-lvl1"
+classifiers = ["Topic :: Games/Entertainment"]
 authors = ["Alexander Kolenchenko <sasha_2014@mail.ru>"]
 readme = "README.md"
 packages = [
