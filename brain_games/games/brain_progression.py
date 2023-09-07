@@ -11,11 +11,10 @@ def get_next_question_and_correct_answer():
     fihish_prog = 25
     interval_progression = randint(2, 4)
     progression = list(range(start_prog, fihish_prog, interval_progression))
-    index = randint(1, 3)
-    correct_answer = progression[index]
-    progression[index] = '..'
-    question_progression = list(progression)
-    question = " ".join(map(str, question_progression))
+    unknown_number = randint(1, 3)
+    correct_answer = progression[unknown_number]
+    progression[unknown_number] = '..'
+    question = " ".join(map(str, progression))
     return question, correct_answer
 
 
