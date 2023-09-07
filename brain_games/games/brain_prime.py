@@ -8,12 +8,12 @@ RULES = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 def get_next_question_and_correct_answer():
     question = randint(2, 50)
-    d = 2
-    while question % d != 0:
-        d += 1
-    if d == question:
+    divider = 2
+    while question % divider != 0:
+        divider += 1
+    if divider == question:
         correct_answer = 'yes'
-    if d != question:
+    if divider != question:
         correct_answer = "no"
     return question, correct_answer
 
