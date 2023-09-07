@@ -18,9 +18,9 @@ def play_game(get_next_question_and_correct_answer, rules):
             good_answers += 1
             print('Correct!')
         else:
-            usr_answ = (f"'{user_answer}' is wrong answer ;(. ")
-            cor_answ = (f"Correct answer was '{correct_answer}'.")
-            print(usr_answ + cor_answ)
-            print(f"Let's try again, {name}!")
+            print(
+                f"'{user_answer}' is wrong answer ;(. "
+                f"Correct answer was '{correct_answer}'."
+                f"\nLet's try again, {name}!")
             return
     print(f"Congratulations, {name}!")
