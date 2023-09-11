@@ -3,11 +3,13 @@ from random import randint, choice
 from brain_games.games.play_game import play_game
 
 RULES = 'What is the result of the expression?'
+MIN_QUESTION_INT = 1
+MAX_QUESTION_INT = 20
 
 
 def get_next_question_and_correct_answer():
-    random_num1 = randint(1, 20)
-    random_num2 = randint(1, 20)
+    random_num1 = randint(MIN_QUESTION_INT, MAX_QUESTION_INT)
+    random_num2 = randint(MIN_QUESTION_INT, MAX_QUESTION_INT)
     random_sign = choice(['+', '-', '*'])
     if random_sign == '+':
         correct_answer = random_num1 + random_num2
