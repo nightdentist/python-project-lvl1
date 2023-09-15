@@ -13,7 +13,7 @@ FINISH_PROGRESSION = 25
 
 
 def get_next_question_and_correct_answer():
-    start_progprogression = randint(MIN_PROGRESSION_INT, MAX_PROGRESSION_INT) 
+    start_progprogression = randint(MIN_PROGRESSION_INT, MAX_PROGRESSION_INT)
     interval_progression = randint(INTERVAL_START, INTERVAL_FINISH)
     progression = list(range(start_progprogression, FINISH_PROGRESSION,
                              interval_progression))
