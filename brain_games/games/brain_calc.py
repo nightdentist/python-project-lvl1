@@ -18,7 +18,7 @@ def get_next_question_and_correct_answer():
     else:
         correct_answer = random_num1 * random_num2
     question = str(random_num1) + ' ' + random_sign + ' ' + str(random_num2)
-    return question, correct_answer
+    return question, str(correct_answer)
 
 
 def run_game():

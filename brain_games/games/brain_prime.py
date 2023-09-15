@@ -16,7 +16,7 @@ def get_next_question_and_correct_answer():
         correct_answer = 'yes'
     if divider != question:
         correct_answer = "no"
-    return question, correct_answer
+    return question, str(correct_answer)
 
 
 def run_game():
