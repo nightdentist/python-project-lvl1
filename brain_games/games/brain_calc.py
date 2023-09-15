@@ -13,9 +13,9 @@ def get_next_question_and_correct_answer():
     random_sign = choice(['+', '-', '*'])
     if random_sign == '+':
         correct_answer = random_num1 + random_num2
-    if random_sign == '-':
+    elif random_sign == '-':
         correct_answer = random_num1 - random_num2
-    if random_sign == '*':
+    elif random_sign == '*':
         correct_answer == random_num1 * random_num2
     question = str(random_num1) + ' ' + random_sign + ' ' + str(random_num2)
     return question, str(correct_answer)
